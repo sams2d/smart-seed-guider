@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Crop Recommender - Sam Sundar</title>
+  <style>
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9fafb;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    h1 {
+      font-size: 2.2em;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 4px;
+      margin-top: 40px;
+    }
+    p {
+      margin: 10px 0;
+    }
+    ul {
+      margin: 10px 0 10px 20px;
+    }
+    li {
+      margin: 6px 0;
+    }
+    code {
+      background: #eef;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    pre {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 0.9em;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .author {
+      background: #eaf4e8;
+      border-left: 5px solid #65a765;
+      padding: 10px 15px;
+      border-radius: 6px;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌾 Smart Crop Recommender</h1>
+
+  <p>
+    A Streamlit-based machine learning application that helps farmers identify the
+    <strong>type of soil</strong> from an uploaded image and recommends the
+    <strong>best crops</strong> to cultivate for that soil type.
+  </p>
+
+  <p><strong>Developed by:</strong> Sam Sundar<br>
+  📧 Email: <a href="mailto:sundarsam805@gmail.com">sundarsam805@gmail.com</a></p>
+
+  <hr>
+
+  <h2>🚀 Overview</h2>
+  <p>
+    This project uses a <strong>Convolutional Neural Network (CNN)</strong> model built with TensorFlow
+    to classify soil types based on images. Once the soil type is identified, the system provides
+    crop recommendations that are most suitable for that type of soil.
+  </p>
+
+  <p>
+    The main goal is to assist farmers and agricultural experts in
+    <strong>optimizing crop selection</strong> and improving agricultural productivity using computer vision.
+  </p>
+
+  <h2>🧱 Features</h2>
+  <ul>
+    <li>🧠 AI-based soil type detection (5 classes: Black, Cinder, Peat, Yellow, Laterite)</li>
+    <li>🌱 Crop recommendation for each soil type</li>
+    <li>🖼️ Easy image upload via Streamlit web interface</li>
+    <li>💾 Local training and storage of model</li>
+    <li>🧩 Modular code (separate scripts for training, app, and dependencies)</li>
+  </ul>
+
+  <h2>📂 Project Structure</h2>
+  <pre>
+smart_crop_recommender/
+│
+├── app.py                     # Streamlit web app
+├── train_model.py              # Model training script
+├── install_dependencies.py     # Dependency installer
+├── soil_to_crops.json          # Soil to crop mapping
+├── model/
+│   └── soil_model.h5           # Trained model file
+│   └── class_indices.json      # Label mapping file
+└── dataset/
+    ├── black/
+    ├── cinder/
+    ├── peat/
+    ├── yellow/
+    └── laterite/
+  </pre>
+
+  <h2>⚙️ Steps to Run</h2>
+
+  <p><strong>Step 1️⃣ — Install necessary dependencies</strong></p>
+  <p>Before training or running the app, make sure you have all required libraries installed:</p>
+  <pre>pip install streamlit tensorflow keras numpy pandas matplotlib opencv-python pillow scipy</pre>
+
+  <p><strong>Step 2️⃣ — Train the model</strong></p>
+  <p>Make sure your dataset is properly structured. Then run:</p>
+  <pre>python train_model.py</pre>
+
+  <p><strong>Step 3️⃣ — Launch the app</strong></p>
+  <pre>streamlit run app.py</pre>
+
+  <h2>🌾 How It Works</h2>
+  <ul>
+    <li>Upload an image of soil from your farm.</li>
+    <li>The trained CNN model classifies the soil type.</li>
+    <li>The system displays the predicted soil category.</li>
+    <li>The app recommends the best crops for that soil.</li>
+  </ul>
+
+  <div class="author">
+    <h2>🧑‍💻 Author</h2>
+    <p><strong>Sam Sundar</strong><br>
+    📧 <a href="mailto:sundarsam805@gmail.com">sundarsam805@gmail.com</a><br>
+    If you use or modify this project, kindly give credits to the original author.</p>
+  </div>
+
+</body>
+</html>

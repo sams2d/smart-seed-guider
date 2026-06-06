@@ -1,0 +1,54 @@
+{
+  "black": [
+    "Cotton",
+    "Soybean",
+    "Sunflower",
+    "Wheat",
+    "Sorghum (Jowar)",
+    "Chickpea (Gram)",
+    "Sugarcane",
+    "Linseed"
+  ],
+  "cinder": [
+    "Tobacco",
+    "Sugarcane",
+    "Millets",
+    "Maize",
+    "Groundnut",
+    "Pulses",
+    "Castor",
+    "Sesame"
+  ],
+  "peat": [
+    "Rice",
+    "Jute",
+    "Pulses",
+    "Vegetables",
+    "Sugar Beet",
+    "Potato",
+    "Turmeric",
+    "Ginger"
+  ],
+  "yellow": [
+    "Groundnut",
+    "Maize",
+    "Paddy",
+    "Bajra (Pearl Millet)",
+    "Cotton",
+    "Sesame",
+    "Turmeric",
+    "Sugarcane"
+  ],
+  "laterite": [
+    "Cashew",
+    "Coffee",
+    "Tea",
+    "Coconut",
+    "Rubber",
+    "Pineapple",
+    "Pepper",
+    "Arecanut"
+  ]
+}
+
+ 
