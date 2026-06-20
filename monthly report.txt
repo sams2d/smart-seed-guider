@@ -1,4 +1,0 @@
-6th | recalling session | practical task | thermistor | pictoblox
-7th | Recalling Session | motor driver |  | motor driver classwork 
-8th | Recalling Session | Relay Module | Iot web application design task
-9th | Recalling Session | list and array | numpy array classwork	
